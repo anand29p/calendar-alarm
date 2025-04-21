@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calendar Alarm</string>
+    
+    <!-- Authentication -->
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_out">Sign out</string>
+    <string name="auth_required">Google authentication is required to access your calendar events</string>
+    <string name="auth_success">Successfully signed in</string>
+    <string name="auth_failed">Authentication failed</string>
+    
+    <!-- Permissions -->
+    <string name="permissions_required">Calendar and notification permissions are required</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="permissions_granted">Permissions granted</string>
+    <string name="permissions_denied">Permissions denied. The app cannot function without these permissions.</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Calendar Event Alerts</string>
+    <string name="notification_channel_description">Alerts for upcoming calendar events</string>
+    <string name="event_upcoming">Upcoming: %1$s</string>
+    <string name="event_now">Now: %1$s</string>
+    <string name="event_in_10_min">%1$s in 10 minutes</string>
+    <string name="event_starting_now">%1$s starting now</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="sync_frequency">Sync Frequency</string>
+    <string name="notification_sound">Notification Sound</string>
+    <string name="vibration_pattern">Vibration Pattern</string>
+    <string name="calendars_to_sync">Calendars to Sync</string>
+    
+    <!-- Misc -->
+    <string name="no_events">No upcoming events found</string>
+    <string name="sync_in_progress">Syncing calendar events…</string>
+    <string name="sync_complete">Calendar sync complete</string>
+    <string name="sync_failed">Failed to sync calendar events</string>
+    <string name="next_event">Next event: %1$s at %2$s</string>
+</resources>
