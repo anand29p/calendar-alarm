@@ -11,10 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up JDK 11
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         java-version: '11'
         distribution: 'temurin'
@@ -33,7 +33,7 @@ jobs:
       run: ./gradlew assembleRelease
     
     - name: Upload unsigned APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-release-unsigned
         path: app/build/outputs/apk/release/app-release-unsigned.apk
@@ -58,7 +58,7 @@ jobs:
     # Upload signed APK if it was signed
     - name: Upload signed APK
       if: ${{ env.SIGNING_KEY_BASE64 != '' }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-release-signed
         path: app/build/outputs/apk/release/app-release-signed.apk
